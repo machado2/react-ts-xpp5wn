@@ -1,0 +1,27 @@
+{
+  "compilerOptions": {
+    "allowJs": true,
+    "allowSyntheticDefaultImports": true,
+    "baseUrl": "./src",
+    "declaration": true,
+    "emitDeclarationOnly": true,
+    "esModuleInterop": true,
+    "incremental": true,
+    "jsx": "react",
+    "jsxFragmentFactory": "React.Fragment",
+    "lib": ["DOM", "DOM.Iterable", "ESNext"],
+    "module": "esnext",
+    "moduleResolution": "node",
+    "noImplicitThis": false,
+    "outDir": "dist",
+    "pretty": true,
+    "removeComments": true,
+    "resolveJsonModule": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "target": "esnext",
+    "types": ["vite/client"]
+  },
+  "exclude": ["node_modules"],
+  "include": ["./src", "vite.config.ts"]
+}
