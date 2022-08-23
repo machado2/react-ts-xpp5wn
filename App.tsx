@@ -80,9 +80,9 @@ function Plane(props: PlaneProps) {
 function InstancedSpheres({ number = 100 }) {
   const [ref] = useSphere(
     (index) => ({
-      args: [1],
+      args: [0.3],
       mass: 0.1,
-      position: [Math.random() - 0.5, Math.random() - 0.5, index * 2],
+      position: [Math.random() * 3, 1.1, Math.random() * 3],
     }),
     useRef<InstancedMesh>(null),
   )
@@ -144,22 +144,8 @@ function ConvexPolyhedron() {
                 rotation={[0.1, 0.2, 0.1]}
                 sides={6}
               />
-              <Cone
-                position={[-1, 6, 0]}
-                rotation={[0.5, 0.1, 0.1]}
-                sides={8}
-              />
-              <Cube
-                position={[2, 3, -0.3]}
-                rotation={[0.5, 0.4, -1]}
-                size={0.4}
-              />
-              <Cone
-                position={[-0.3, 7, 1]}
-                rotation={[1, 0.4, 0.1]}
-                sides={7}
-              />
-              <InstancedSpheres number={5} />
+
+              <InstancedSpheres number={2} />
             </group>
           </Physics>
       </Canvas>
